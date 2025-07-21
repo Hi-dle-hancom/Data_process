@@ -43,18 +43,18 @@ def convert_to_fim_format_with_original_cols(input_file_path, output_file_path):
 
                     # user의 content (빈칸을 표시하는 코드)
                     user_content_str = (
-                        "다음 파이썬 코드의 빈 부분을 완성해 주세요:\n\n"
-                        "```python\n"
-                        f"{prefix_code}"
-                        "# (여기에 코드를 완성해주세요)\n"
-                        f"{suffix_code}"
-                        "```"
+                    "Please complete the blank part of the following Python code:\n\n"
+                    "```python\n"
+                    f"{prefix_code}"
+                    "# (Complete the code here)\n"
+                    f"{suffix_code}"
+                    "```\n\n"
                     )
 
-                    # assistant의 content (마크다운 코드 블록으로 감싸기)
+# assistant's content (wrapped in markdown code block)
                     assistant_full_content_str = (
-                        "네, 요청하신 대로 코드를 완성했습니다. 다음은 완성된 코드입니다:\n\n"
-                        f"```python\n{assistant_fim_content_raw}\n```"
+                    "Yes, I have completed the code as requested. Here is the completed code:\n\n"
+                    f"```python\n{assistant_fim_content_raw}\n```"
                     )
 
                     # 최종 messages 형식으로 추가할 딕셔너리

@@ -71,3 +71,6 @@ def save_data_to_mongo(df: pd.DataFrame, uri: str, db: str, collection: str):
         print(f"[ERROR] MongoDB 연결 실패: {e}")
     except Exception as e:
         print(f"[ERROR] 데이터 저장 중 예상치 못한 오류 발생: {e}")
+
+
+
