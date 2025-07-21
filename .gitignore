@@ -4,6 +4,9 @@
 # 기타 일반적으로 무시할 파일/폴더 (필요시 추가)
 __pycache__/
 *.pyc
-.env
+**/.env 
 venv/
 .vscode/
+prompt_processing/mongo.env
+mongo.env
+mongo1.env
