@@ -17,3 +17,7 @@ random
 os
 pathlib
 sys
+requests
+time
+selenium
+beautifulsoup4
