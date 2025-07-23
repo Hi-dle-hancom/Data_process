@@ -9,7 +9,7 @@ def display_and_save_dialogues_prettily(input_jsonl_path, output_prettified_path
     processed_count = 0
     try:
         # 출력 파일을 쓰기 모드로 엽니다. 파일이 이미 존재하면 덮어씁니다.
-        with open(output_prettified_path, 'w', encoding='utf-8') as outfile:
+        with open(output_prettified_path, "w", encoding='utf-8') as outfile:
             with open(input_jsonl_path, 'r', encoding='utf-8') as infile:
                 for line_num, line in enumerate(infile):
                     try:
