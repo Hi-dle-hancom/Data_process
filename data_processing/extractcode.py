@@ -22,6 +22,6 @@ def extract_content_and_save_jsonl(input_jsonl_path: str, output_jsonl_path: str
                 print(f"[Line {line_num}] JSONDecodeError: {e}")
 extract_content_and_save_jsonl(
     input_jsonl_path="output_data.jsonl",
-    output_jsonl_path="data.jsonl"
+    output_jsonl_path='data.jsonl'
 )
-print("JSONL 파일에서 'content' 필드 추출 완료. 'data.jsonl'에 저장되었습니다.")
+
