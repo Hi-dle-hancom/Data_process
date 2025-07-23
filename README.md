@@ -102,17 +102,3 @@ pip install -r requirements.txt
 
 ---
 
-## 🧑‍💻 기여 방법
-
-1. 이슈 또는 PR 등록
-2. 코드 스타일 유지
-3. 커밋 메시지는 명확하게!
-
----
-
-## 📝 라이선스
-
-MIT License  
-© 2025 Hi-dle Hancom
-
----
