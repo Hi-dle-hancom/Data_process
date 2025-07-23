@@ -1,4 +1,6 @@
 # mongo_loader.py
+# 몽고디비에서 메타데이터를 포함한 데이터 로딩 및 저장을 위한 모듈
+# 이 모듈은 MongoDB에서 데이터를 로드하고, DataFrame으로 변환하며, DataFrame을 MongoDB에 저장하는 기능을 제공합니다.
 
 import pandas as pd
 from pymongo import MongoClient
@@ -20,7 +22,7 @@ def load_data_from_mongo(uri: str, db: str, collection: str, query=None, limit: 
             print(f"[WARN] MongoDB '{db}.{collection}'에서 데이터 없음")
             return pd.DataFrame()
         df = pd.DataFrame(data)
-        if "_id" in df.columns:
+        if '_id' in df.columns:
             df = df.drop(columns=["_id"])
         print(f"[INFO] MongoDB '{db}.{collection}'에서 {len(df)}개 데이터 로드 완료 (제한: {limit if limit > 0 else '없음'}).") # 로그 메시지 수정
         return df

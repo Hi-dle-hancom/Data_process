@@ -6,7 +6,7 @@ from sklearn.neighbors import LocalOutlierFactor
 
 def isolation_filter(df: pd.DataFrame) -> pd.DataFrame:
     # 이상치 탐지에 사용할 컬럼 리스트
-    features = ["content_length", "cyclomatic_complexity", "maintainability_index", "comment_ratio"]
+    features = ['content_length', "cyclomatic_complexity", "maintainability_index", "comment_ratio"]
 
     # 모든 특성 컬럼이 DataFrame에 있는지 확인
     for col in features:

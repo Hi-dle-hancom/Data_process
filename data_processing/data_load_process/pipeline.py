@@ -15,7 +15,7 @@ def save_dataframe_to_jsonl_in_chunks(df: pd.DataFrame, file_path: str, chunk_si
     파일이 존재하지 않으면 새로 생성하고, 첫 번째 청크에만 헤더를 추가합니다.
     """
     if df.empty:
-        print(f"[WARN] 저장할 데이터가 없어 '{file_path}'에 저장하지 않습니다.")
+        print(f'[WARN] 저장할 데이터가 없어 "{file_path}"에 저장하지 않습니다.')
         return
 
     # 파일이 존재하는지 미리 확인하여 헤더 쓰기 여부 결정

@@ -87,7 +87,7 @@ def extract_code_structure_info(code: str) -> dict:
            stripped_line.startswith("'''"):
             comment_lines += 1
     
-    if info["number_of_lines"] > 0:
+    if info['number_of_lines'] > 0:
         info["comment_ratio"] = comment_lines / info["number_of_lines"]
 
     try:
