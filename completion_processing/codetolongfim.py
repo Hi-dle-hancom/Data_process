@@ -54,7 +54,7 @@ def convert_jsonl_to_fim_format_with_limit(input_jsonl_path, output_jsonl_path,
     파일당 최대 청크 수를 제한해서 FIM 학습용 JSONL 생성.
     """
     with open(input_jsonl_path, 'r', encoding='utf-8') as infile, \
-         open(output_jsonl_path, 'w', encoding='utf-8') as outfile:
+         open(output_jsonl_path, "w", encoding='utf-8') as outfile:
         
         for line_num, line in enumerate(infile, 1):
             try:
