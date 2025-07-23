@@ -40,7 +40,7 @@ def merge_jsonl_files(input_filepaths: list[str], output_filepath: str):
 
     print(f"\n병합 완료! 총 {merged_count}개의 JSON 객체가 '{output_filepath}'에 저장되었습니다.")
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     # 병합할 입력 JSONL 파일 목록
     # 여기에 병합하고 싶은 JSONL 파일 경로를 추가하세요.
     # 예시: ['data_part1.jsonl', 'data_part2.jsonl']
