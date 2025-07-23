@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 if __name__ == "__main__":
     # .env 파일에서 환경 변수를 로드합니다.
-    load_dotenv(dotenv_path='mongo1.env') # .env 로드
+    load_dotenv(dotenv_path="mongo1.env") # .env 로드
 
     # MongoDB 데이터 로드용 URI
     mongo_uri_load = os.getenv("MONGO_URI_LOAD")
