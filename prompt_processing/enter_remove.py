@@ -37,7 +37,7 @@ def process_jsonl_file(input_filepath: str, output_filepath: str):
         return
 
     processed_count = 0
-    with open(input_filepath, 'r', encoding='utf-8') as infile, \
+    with open(input_filepath, "r", encoding='utf-8') as infile, \
          open(output_filepath, 'w', encoding='utf-8') as outfile:
         
         for line_num, line in enumerate(infile, 1):
