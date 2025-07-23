@@ -7,6 +7,5 @@ __pycache__/
 **/.env 
 venv/
 .vscode/
-prompt_processing/mongo.env
 mongo.env
 mongo1.env
