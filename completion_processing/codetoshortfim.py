@@ -16,7 +16,7 @@ def extract_larger_chunks(code_str, min_suffix_lines=3):
 
     nodes = []
     for node in tree.body:
-        start = getattr(node, 'lineno', None)
+        start = getattr(node, "lineno", None)
         end = getattr(node, 'end_lineno', None)
         if start is None or end is None:
             end = start
