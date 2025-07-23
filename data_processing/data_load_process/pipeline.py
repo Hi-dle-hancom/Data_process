@@ -1,7 +1,7 @@
 # pipeline.py
 
 import pandas as pd
-from mongo_loader import load_data_from_mongo, save_data_to_mongo # save_data_to_mongo 추가
+from data_processing.data_load_process.mongo_loader import load_data_from_mongo, save_data_to_mongo # save_data_to_mongo 추가
 from preprocessing import preprocess_rule_1, preprocess_rule_2 # Updated import
 from ml_validation import isolation_filter, lof_filter # IsolationForest, LOF 유지
 import os # 파일 존재 여부 확인을 위해 os 모듈 추가
