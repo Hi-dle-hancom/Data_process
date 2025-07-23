@@ -39,5 +39,5 @@ if __name__ == "__main__":
         "merged_unique4.jsonl",
         "merged_unique5.jsonl",
     ]
-    output_file = "merged_unique6.jsonl"
+    output_file = 'merged_unique6.jsonl'
     merge_jsonl_unique(input_files, output_file)
