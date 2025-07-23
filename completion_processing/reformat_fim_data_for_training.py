@@ -13,7 +13,7 @@ def convert_to_fim_format_with_original_cols(input_file_path, output_file_path):
     """
 
     # DeepSeek Coder의 FIM 토큰 (tokenizer.json에서 확인된 정확한 값 사용)
-    FIM_START = "<｜fim begin｜>"
+    FIM_START = '<｜fim begin｜>'
     FIM_HOLE = "<｜fim hole｜>"
     FIM_END = "<｜fim end｜>"
     EOS_TOKEN = "<|EOT|>" # End Of Turn / End Of Text 토큰
