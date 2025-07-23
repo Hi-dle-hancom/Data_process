@@ -6,7 +6,7 @@ def extract_import_lines(lines):
     return [i for i, line in enumerate(lines) if line.strip().startswith(("import ", "from "))]
 
 def adjust_imports_in_prefix(sample):
-    prefix_lines = sample["prefix_code"].splitlines(keepends=True)
+    prefix_lines = sample['prefix_code'].splitlines(keepends=True)
     target_code = sample.get("target_code", "")
     suffix_code = sample.get("suffix_code", "")
 
