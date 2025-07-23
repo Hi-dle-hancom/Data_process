@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 # 환경 변수 로드 (스크립트 전역에서 한 번만 호출)
-load_dotenv(dotenv_path='mongo.env')
+load_dotenv(dotenv_path="mongo.env")
 
 # 파일 경로를 스크립트와 동일한 디렉토리로 설정
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
