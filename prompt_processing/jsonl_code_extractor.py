@@ -23,7 +23,7 @@ def extract_codes_from_jsonl(input_path, output_path):
             obj = json.loads(line)
             if 'messages' in obj:
                 for msg in obj['messages']:
-                    if msg.get('role') == 'assistant':
+                    if msg.get("role") == 'assistant':
                         code_blocks = extract_code_blocks(msg['content'])
                         for code in code_blocks:
                             code_data.append({"code": code})
